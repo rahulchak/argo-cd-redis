@@ -13,3 +13,9 @@ spec:
       targetPort: 6379
   selector:
     app.kubernetes.io/name: argocd-redis
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 34.66.1.207    
